@@ -36,4 +36,6 @@ public:
     void mostra(void) const;
     /* Apresenta o conte�do da �rvore em ordem sim�trica  */
     
+    void altura(void) const;
+    
 };

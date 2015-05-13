@@ -42,6 +42,8 @@ public:
 		   */
     void mostra(void) const; /* Mostra o conte�do da �rvore a partir do n�,
                               em ordem sim�trica */
+    
+    int altura() const;
 };
 
 
@@ -155,9 +157,30 @@ void no::mostra() const{
     cout << "]";
 }
 
+int no::altura() const{
+    int alturaEsquerda = -1;
+    int alturaDireita = -1;
+    
+    if(esq != NULL)
+        alturaEsquerda = esq->altura();
+    if(dir != NULL)
+        alturaDireita = dir->altura();
+    if(esq > dir)
+        return alturaEsquerda+1;
+    else
+        return alturaDireita+1;
+}
+
 /**********************************************/
 /* Implementa��o dos m�todos da classe arv_bb */
 /**********************************************/
+
+void arv_bb::altura() const{
+    int altura = 0;
+    if (raiz != NULL)
+        altura = raiz->altura();
+    cout<< "Altura: " << altura;
+}
 
 /* Construtor: �rvore inicialmente vazia (raiz==NULL) */
 arv_bb::arv_bb(void) {
