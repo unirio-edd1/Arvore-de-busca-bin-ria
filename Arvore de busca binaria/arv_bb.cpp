@@ -177,9 +177,12 @@ int no::altura() const{
 
 void arv_bb::altura() const{
     int altura = 0;
-    if (raiz != NULL)
+    if (raiz != NULL){
         altura = raiz->altura();
-    cout<< "Altura: " << altura;
+        cout << "Altura: " << altura;
+    }
+    else
+        cout << "Arvore vazia";
 }
 
 /* Construtor: �rvore inicialmente vazia (raiz==NULL) */
