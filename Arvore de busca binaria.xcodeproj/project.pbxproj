@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		66A0E3371B03FAA60073F002 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66A0E3361B03FAA60073F002 /* main.cpp */; };
+		66A0E33F1B03FB1F0073F002 /* arv_bb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66A0E33D1B03FB1F0073F002 /* arv_bb.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		66A0E3331B03FAA60073F002 /* Arvore de busca binaria */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Arvore de busca binaria"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A0E3361B03FAA60073F002 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		66A0E33D1B03FB1F0073F002 /* arv_bb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arv_bb.cpp; sourceTree = "<group>"; };
+		66A0E33E1B03FB1F0073F002 /* arv_bb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arv_bb.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				66A0E3361B03FAA60073F002 /* main.cpp */,
+				66A0E33D1B03FB1F0073F002 /* arv_bb.cpp */,
+				66A0E33E1B03FB1F0073F002 /* arv_bb.h */,
 			);
 			path = "Arvore de busca binaria";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A0E3371B03FAA60073F002 /* main.cpp in Sources */,
+				66A0E33F1B03FB1F0073F002 /* arv_bb.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
